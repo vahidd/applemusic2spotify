@@ -1,0 +1,31 @@
+body {
+	padding-top: 60px;
+}
+
+#header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+#header h1 {
+	color: #fff;
+	float: left;
+	margin: 0 40px 0 0;
+	font-size: 20px;
+}
+
+#header .ant-menu {
+	border: 0;
+}
+
+#content {
+	background: #fff;
+	padding: 40px 0;
+	min-height: calc(100vh - 133px);
+}
+
+.container {
+	padding: 0 50px;
+}
