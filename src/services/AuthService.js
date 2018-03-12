@@ -12,7 +12,7 @@ export const getLoginUrl = (scopes = [
   let queryArgs = [];
   queryArgs.push(`client_id=${SPOTIFY_CLIENT_ID}`);
   queryArgs.push(`response_type=token`);
-  queryArgs.push(`redirect_uri=${encodeURIComponent(`${window.location.protocol}//${window.location.host}/login-callback`)}`);
+  queryArgs.push(`redirect_uri=${encodeURIComponent(`${window.location.protocol}//${window.location.host}${window.location.pathname}login-callback`)}`);
   queryArgs.push(`scope=${scopes.join(' ')}`);
   return `https://accounts.spotify.com/authorize/?${queryArgs.join('&')}`;
 };
